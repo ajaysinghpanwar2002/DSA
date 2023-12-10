@@ -13,8 +13,17 @@
  */
 
 function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
+    if (!inorder.length) return null;
 
-    return null;
+    let rootValue = preorder.shift() as number;
+    let root = new TreeNode(rootValue);
+
+    let index = inorder.indexOf(rootValue);
+
+    root.left = buildTree(preorder, inorder.slice(0, index));
+    root.right = buildTree(preorder, inorder.slice(index + 1));
+
+    return root;
 };
 
 /**
