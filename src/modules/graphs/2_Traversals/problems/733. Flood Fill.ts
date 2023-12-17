@@ -80,3 +80,5 @@ var floodFill = function (image, sr, sc, newColor) {
     DFS(sr, sc, ans, image, newColor);
     return ans;
 };
+
+export{}
