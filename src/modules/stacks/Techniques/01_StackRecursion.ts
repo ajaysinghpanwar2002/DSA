@@ -36,3 +36,5 @@ function factorial(n: number): number {
 const n = 5;
 const factorialValue = factorial(n);
 console.log(`Factorial of ${n} is ${factorialValue}`);
+
+export {}

@@ -46,3 +46,5 @@ const tree = new ArrayBinaryTree(values);
 console.log("Root:", tree.getRoot()); // Output: Root: 10
 console.log("Left child of 5:", tree.getLeftChild(1)); // Output: Left child of 5: 3
 console.log("Right child of 5:", tree.getRightChild(1)); // Output: Right child of 5: 8
+
+export{}

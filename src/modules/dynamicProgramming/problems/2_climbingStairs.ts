@@ -5,6 +5,7 @@
  * 3) tabulation to it
  * 4) space optimization 
  */
+import { measureTime } from "../utits";
 
 function recursive(i: number, n: number): number {
     if (i >= n - 1) return 1;
@@ -46,17 +47,22 @@ function SpaceOptimisedTabulation(n: number): number {
 
 function climbStairs(n: number): number {
     // basic recursion
-    // return recursive(0, n);
+    return recursive(0, n);
+    // return measureTime(recursive, 0, n);
 
     // memoized recursion
     // let array = new Array(n).fill(-1);
     // return MemoizedRecursion(0, n, array);
+    // return measureTime(MemoizedRecursion, 0, n, new Array(n).fill(-1));
 
     // tabulation
     // return TabulationClimbingStairs(n);
+    // return measureTime(TabulationClimbingStairs, n);
 
     // space optimised tabulation
-    return SpaceOptimisedTabulation(n);
+    // return SpaceOptimisedTabulation(n);
+    return measureTime(SpaceOptimisedTabulation, n);
+    
 }
 
 // Example usage:
