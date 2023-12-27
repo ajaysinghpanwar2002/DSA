@@ -1,4 +1,0 @@
-/**
- * 1) fibonacci number
- * 
- */
