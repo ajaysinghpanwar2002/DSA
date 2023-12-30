@@ -50,3 +50,5 @@ function TabulateCoinChange(coins: number[], amount: number): number {
     if (ans === Infinity) return -1;
     return ans;
 }
+
+export {}
