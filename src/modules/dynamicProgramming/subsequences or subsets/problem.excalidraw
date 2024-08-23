@@ -5,8 +5,8 @@
   "elements": [
     {
       "type": "text",
-      "version": 325,
-      "versionNonce": 691444876,
+      "version": 326,
+      "versionNonce": 1057043708,
       "isDeleted": false,
       "id": "a1p1rtr1WS4bD9NCbWEdj",
       "fillStyle": "solid",
@@ -26,7 +26,7 @@
       "frameId": "zpXVOTiIkdSm4bZ5XM8ds",
       "roundness": null,
       "boundElements": [],
-      "updated": 1703759095588,
+      "updated": 1723513120153,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -37,7 +37,7 @@
       "containerId": null,
       "originalText": "function findWaysTabulation(num: number[], k: number) {\n    let n = num.length;\n    let dp = new Array(n).fill(0).map(() => new Array(k + 1).fill(0));\n\n    // base case: if the target sum is zero\n    for (let i = 0; i < n; i++) dp[i][0] = 1;\n\n    // initialise the first row based on the first element of the array\n    if (num[0] <= k) dp[0][num[0]] = 1;\n\n    for (let ind = 1; ind < n; ind++) {\n        for (let target = 1; target <= k; target++) {\n\n            let notTaken = dp[ind - 1][target];\n            let taken = 0;\n            if (num[ind] <= target) taken = dp[ind - 1][target - num[ind]];\n\n            dp[ind][target] = notTaken + taken;\n        }\n    }\n\n    return dp[n - 1][k];\n}",
       "lineHeight": 1.2,
-      "baseline": 438
+      "baseline": 437
     },
     {
       "type": "frame",

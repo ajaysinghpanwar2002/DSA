@@ -8,7 +8,8 @@
 import { measureTime } from "../utits";
 
 function recursive(i: number, n: number): number {
-    if (i >= n - 1) return 1;
+    if (i === n - 1) return 1; // if we are at the last stage still it will be 1
+    if (i === n) return 1; // base case reached at the end
     let x = recursive(i + 1, n);
     let y = recursive(i + 2, n);
     return x + y;
@@ -48,7 +49,7 @@ function SpaceOptimisedTabulation(n: number): number {
 function climbStairs(n: number): number {
     // basic recursion
     return recursive(0, n);
-    // return measureTime(recursive, 0, n);
+    return measureTime(recursive, 0, n);
 
     // memoized recursion
     // let array = new Array(n).fill(-1);
@@ -62,7 +63,7 @@ function climbStairs(n: number): number {
     // space optimised tabulation
     // return SpaceOptimisedTabulation(n);
     return measureTime(SpaceOptimisedTabulation, n);
-    
+
 }
 
 // Example usage:

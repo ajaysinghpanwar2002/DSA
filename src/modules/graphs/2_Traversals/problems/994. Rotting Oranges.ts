@@ -14,7 +14,7 @@ var orangesRotting = function (grid: number[][]): number {
     let n = grid.length;
     let m = grid[0].length;
 
-    let queue: QueueElement = []; // [[r,c],t]
+    let queue: any = []; // [[r,c],t]
     const visited = new Array(n).fill(false).map(() => new Array(m).fill(false));
 
     // Create a function to check if a cell is valid
@@ -40,7 +40,7 @@ var orangesRotting = function (grid: number[][]): number {
     // Define the four possible directions (up, down, left, right)
     const directions = [[-1, 0], [1, 0], [0, -1], [0, 1]];
 
-    while (queue.length !== 0) {
+    while (queue.length > 0) {
         let current = queue.shift() as [[number, number], number];
         let r = current[0][0];
         let c = current[0][1];

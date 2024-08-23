@@ -3,7 +3,7 @@
 // simple recursion
 function f(ind: number, heights: number[]): number {
 
-    if (ind == heights.length - 1) return 0;
+    if (ind == 0) return 0;
 
     let left = f(ind - 1, heights) + Math.abs(heights[ind] - heights[ind - 1]);
     let right = Infinity;
@@ -14,7 +14,7 @@ function f(ind: number, heights: number[]): number {
 // recusion with memoization
 function memoF(ind: number, heights: number[], dp: number[]): number {
 
-    if (ind == heights.length - 1) return 0;
+    if (ind == 0) return 0;
 
     if (dp[ind] != -1) return dp[ind];
     let left = memoF(ind - 1, heights, dp) + Math.abs(heights[ind] - heights[ind - 1]);
@@ -58,3 +58,5 @@ function frogJump(n: number, heights: number[]): number {
     let dp = new Array(n + 1).fill(-1);
     return memoF(n - 1, heights, dp);
 };
+
+export { }

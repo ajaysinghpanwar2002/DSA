@@ -1031,8 +1031,8 @@
     },
     {
       "type": "text",
-      "version": 55,
-      "versionNonce": 624363034,
+      "version": 56,
+      "versionNonce": 266902417,
       "isDeleted": false,
       "id": "40Jtrg0-8xo7-V7nzcW3c",
       "fillStyle": "solid",
@@ -1052,7 +1052,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1702750339701,
+      "updated": 1723891514281,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1063,12 +1063,12 @@
       "containerId": null,
       "originalText": "No two adjacent have the same color",
       "lineHeight": 1.25,
-      "baseline": 17
+      "baseline": 18
     },
     {
       "type": "text",
-      "version": 136,
-      "versionNonce": 842498182,
+      "version": 137,
+      "versionNonce": 892166655,
       "isDeleted": false,
       "id": "70kty06WVSEb8sKAbP71m",
       "fillStyle": "solid",
@@ -1088,7 +1088,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1702750339708,
+      "updated": 1723891514292,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1099,7 +1099,7 @@
       "containerId": null,
       "originalText": "1) linear graph with no cycles are always \nbipartite.\n2) any graph with even cycle length can be bipartite",
       "lineHeight": 1.2,
-      "baseline": 67
+      "baseline": 66
     }
   ],
   "appState": {
